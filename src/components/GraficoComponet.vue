@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Grafico -->
     <apexchart 
       type="line"
       height="400"

@@ -44,7 +44,7 @@
     </div>
 
 
-
+  <!-- Componente -->  
   <GraficoComponet  :categories="categories" :series="series"/>  
 
   </div>
@@ -67,6 +67,8 @@ export default {
   },
 
   methods: {
+
+    //filtrar por datas
     async filtrarData() {
       try {
         const response = await fetch(
@@ -100,6 +102,7 @@ export default {
   },
 
   mounted() {
+    
     // Chama a API assim que o componente montar
     this.fetchChartData();
   }
