@@ -6,17 +6,12 @@ import {CidadesController} from './../controllers'
 const router = Router ();
 
 
-
-
-router.post('/teste', (req,res)=> {
-  console.log(req.body)
-    //retornar dado comuns 
-    //return res.send(req.body);
-
-    //retornar JSon
-    return res.json(req.body);
+//Router de Teste
+router.get('/' , (_, res) => {
+  return res.send('Olá Dev');
 });
 
+//criar Cidade
 router.post('/cidades/', CidadesController.create);
 
 
